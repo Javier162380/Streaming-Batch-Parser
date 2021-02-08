@@ -199,8 +199,6 @@ New Hosts where not processed in the last 10 seconds
 
 In this solution, I continue using python generators for reading files and micro-batches for process data. When the target directory is specified in that directory, a new sub folder called ```processed``` is created. On that folder are moved all the files analyzed by the reading thread. I avoid processing the same message twice as I assume it is something expected by the challenge. Also all new files added to the directory specify by the CLI will be processed when the reader thread it is relased so I assume this cover the funcionality required of proccessing new data.
 
-# Testing.
-
 In this solution, I continue using python generators for reading files and micro-batches for process data. When the target directory is specified in that directory, a new subfolder called ```processed``` is created. On that folder are moved all the files analyzed by the reading thread. I avoid processing the same message twice as I assume it is something expected by the challenge. Also, all new files added to the directory specified by the CLI will be processed when the reader thread is released, so I assume this covers the functionality required for processing new data.
 
 # Testing.
